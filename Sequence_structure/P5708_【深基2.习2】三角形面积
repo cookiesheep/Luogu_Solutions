@@ -29,3 +29,35 @@
 ## 提示
 
 数据保证能构成三角形，$0\leq a,b,c\leq 1000$，每个边长输入时不超过 $2$ 位小数。
+
+# solutions
+```cpp
+
+// #include <iostream>
+// #include <iomanip> 
+// #include <cmath>
+// using namespace std;
+// int main()
+// {
+// double a,b,c;
+// cin>>a>>b>>c;
+// double p=0.5*(a+b+c);
+// double s=sqrt(p*(p-a)*(p-b)*(p-c));
+// cout<<fixed<<setprecision(1)<<s<<endl;
+
+// 	return 0;
+// }
+
+
+#include<cstdio>
+#include<cmath>
+using namespace std;
+int main()
+{
+    double a,b,c,p;
+    scanf("%lf%lf%lf",&a,&b,&c);
+    p=(a+b+c)/2;
+    printf("%.1lf",sqrt(p*(p-a)*(p-b)*(p-c)));
+    return 0;
+}
+```
